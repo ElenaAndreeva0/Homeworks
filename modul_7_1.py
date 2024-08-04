@@ -14,10 +14,7 @@
 # Добавляет в файл __file_name каждый продукт из products, если его ещё нет в файле (по названию).
 # Если такой продукт уже есть, то не добавляет и выводит строку 'Продукт <название> уже есть в магазине' .
 
-from pprint import pprint
 
-
-#
 class Product:
     def __init__(self, name, weight, category):
         self.name = name
@@ -30,7 +27,7 @@ class Product:
 
 class Shop:
     def __init__(self):
-        self.__file_name = "../products.txt"
+        self.__file_name = "products.txt"
 
     def get_products(self):
         file = open(self.__file_name, 'r')
